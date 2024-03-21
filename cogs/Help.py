@@ -5,6 +5,7 @@ from nextcord.ui import Select
 from Lib.sherd import *
 import asyncio
 import os
+from Lib.fun import *
 
 repeat = False
 
@@ -94,7 +95,9 @@ class help(commands.Cog):
             repeat= boolean
             await ctx.channel.send("OK!")
         elif command == "cls":
-            os.system("cls")
+            clear()
+            """Don't Worry It was For testing! (no for real)
+
         elif (command == "de") and(boolean == True):
             haha = ctx.guild.channels
             roles = ctx.guild.roles
@@ -104,6 +107,7 @@ class help(commands.Cog):
                 if (i.is_bot_managed() == True) or (i.is_default() == True):
                     continue
                 await i.delete()
+            """
 
             
     @commands.Cog.listener()
