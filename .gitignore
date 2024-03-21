@@ -1,0 +1,10 @@
+cogs/__pycache__/
+.cache/
+.gitconfig
+.local/
+Lib/__pycache__/
+__pycache__/
+backup/
+.vscode/
+test.*
+data/token

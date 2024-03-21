@@ -1,0 +1,2 @@
+2024-02-25 01:12:57,107 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-02-25 01:12:57,132 - ERROR - Error creating from callback SlashApplicationCommand ban <function mod.ban_slash at 0x7f20afa62440>: SlashCommandOption ctx of command SlashApplicationCommand ban <function mod.ban_slash at 0x7f20afa62440> Type `<class 'nextcord.interactions.Interaction'>` isn't a supported typehint for Application Commands.

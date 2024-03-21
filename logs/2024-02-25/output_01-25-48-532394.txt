@@ -1,0 +1,6 @@
+2024-02-25 01:25:48,533 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-02-25 01:25:48,643 - INFO - logging in using static token
+2024-02-25 01:25:48,691 - INFO - Cleaning up tasks.
+2024-02-25 01:25:48,691 - INFO - Cleaning up after 2 tasks.
+2024-02-25 01:25:48,696 - INFO - All tasks finished cancelling.
+2024-02-25 01:25:48,696 - INFO - Closing the event loop.

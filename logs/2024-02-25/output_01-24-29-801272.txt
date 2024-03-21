@@ -1,0 +1,8 @@
+2024-02-25 01:24:29,802 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-02-25 01:24:29,912 - INFO - logging in using static token
+2024-02-25 01:24:30,285 - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-02-25 01:24:30,534 - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-brxr",{"micros":153055,"calls":["id_created",{"micros":852,"calls":[]},"session_lookup_time",{"micros":297,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-61",{"micros":151134,"calls":["start_session",{"micros":108318,"calls":["discord-api-5795c7ccc4-lzf9c",{"micros":99412,"calls":["get_user",{"micros":15778},"get_guilds",{"micros":13848},"send_scheduled_deletion_message",{"micros":11},"guild_join_requests",{"micros":3},"authorized_ip_coro",{"micros":12}]}]},"starting_guild_connect",{"micros":62,"calls":[]},"presence_started",{"micros":7249,"calls":[]},"guilds_started",{"micros":176,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":35300,"calls":[]},"connect_finished",{"micros":35307,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 5a95e5a2a83df0b5ece7a7550c10f245). Resume URL specified as wss://gateway-us-east1-b.discord.gg
+2024-02-25 01:25:06,680 - INFO - Cleaning up tasks.
+2024-02-25 01:25:06,680 - INFO - Cleaning up after 1 tasks.
+2024-02-25 01:25:06,684 - INFO - All tasks finished cancelling.
+2024-02-25 01:25:06,684 - INFO - Closing the event loop.

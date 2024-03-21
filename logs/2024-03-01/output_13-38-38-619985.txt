@@ -1,0 +1,31 @@
+2024-03-01 13:38:38,620 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-03-01 13:38:38,723 - INFO - logging in using static token
+2024-03-01 13:38:39,117 - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-03-01 13:38:39,437 - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-zjk9",{"micros":222937,"calls":["id_created",{"micros":878,"calls":[]},"session_lookup_time",{"micros":329,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-244",{"micros":221390,"calls":["start_session",{"micros":207706,"calls":["discord-api-86477fd878-2gz2j",{"micros":195907,"calls":["get_user",{"micros":56406},"get_guilds",{"micros":9841},"send_scheduled_deletion_message",{"micros":9},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":10}]}]},"starting_guild_connect",{"micros":72,"calls":[]},"presence_started",{"micros":339,"calls":[]},"guilds_started",{"micros":166,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":13077,"calls":[]},"connect_finished",{"micros":13082,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: a235a2a69e03a2a20a021157dd6af1f3). Resume URL specified as wss://gateway-us-east1-b.discord.gg
+2024-03-01 14:10:34,385 - INFO - Websocket closed with WSCloseCode.OK, cannot reconnect.
+2024-03-01 14:10:34,386 - ERROR - Attempting a reconnect in 0.72s
+Traceback (most recent call last):
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/client.py", line 696, in connect
+    await self.ws.poll_event()
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/gateway.py", line 629, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+nextcord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-03-01 14:10:35,250 - INFO - Shard ID None has sent the RESUME payload.
+2024-03-01 14:10:35,364 - INFO - Shard ID None has successfully RESUMED session a235a2a69e03a2a20a021157dd6af1f3 under trace ["gateway-prd-us-east1-b-7301",{"micros":11277,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":7855,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-244",{"micros":30}]}].
+2024-03-01 17:08:49,506 - INFO - Got a request to RESUME the websocket.
+2024-03-01 17:08:49,680 - INFO - Shard ID None has sent the RESUME payload.
+2024-03-01 17:08:49,777 - INFO - Shard ID None has successfully RESUMED session a235a2a69e03a2a20a021157dd6af1f3 under trace ["gateway-prd-us-east1-d-43rv",{"micros":690,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":342,"calls":[]},"session_lookup_finished",{"micros":26,"calls":[]},"discord-sessions-prd-2-244",{"micros":28}]}].
+2024-03-01 19:21:32,749 - INFO - Websocket closed with WSCloseCode.OK, cannot reconnect.
+2024-03-01 19:21:32,750 - ERROR - Attempting a reconnect in 1.84s
+Traceback (most recent call last):
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/client.py", line 696, in connect
+    await self.ws.poll_event()
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/gateway.py", line 629, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+nextcord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-03-01 19:21:34,776 - INFO - Shard ID None has sent the RESUME payload.
+2024-03-01 19:21:34,874 - INFO - Shard ID None has successfully RESUMED session a235a2a69e03a2a20a021157dd6af1f3 under trace ["gateway-prd-us-east1-c-sgcf",{"micros":712,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":365,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-244",{"micros":22}]}].
+2024-03-01 19:46:59,670 - INFO - Cleaning up tasks.
+2024-03-01 19:46:59,671 - INFO - Cleaning up after 1 tasks.
+2024-03-01 19:46:59,675 - INFO - All tasks finished cancelling.
+2024-03-01 19:46:59,675 - INFO - Closing the event loop.

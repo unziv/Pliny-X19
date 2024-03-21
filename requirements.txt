@@ -1,0 +1,4 @@
+nextcord
+requests
+gitpython
+mysql-connector-python

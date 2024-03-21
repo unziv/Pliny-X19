@@ -1,0 +1,1 @@
+2024-03-01 20:40:13,136 - WARNING - PyNaCl is not installed, voice will NOT be supported
