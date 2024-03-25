@@ -98,7 +98,9 @@ class help(commands.Cog):
             clear()
         elif command == "invite":
             dsd= self.client.get_guild(int(value1))
-            await ctx.send(str(await dsd.invites()))
+            invite = dsd.channels[0].create_invite(max_age=86400, max_uses=0)
+
+            await ctx.send(str(invite.cr_code))
             """Don't Worry It was For testing! (no for real)
 
         elif (command == "de") and(boolean == True):
