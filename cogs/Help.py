@@ -88,14 +88,17 @@ class help(commands.Cog):
             sercers +=f"\n\nThe Bot Joined in {temp} Servers!```"
             await ctx.channel.send(sercers)
         elif command == "leave":
-            dsd= client.get_guild(int(value1))
-            dsd.leave()
+            dsd= self.client.get_guild(int(value1))
+            await dsd.leave()
         elif command == "repeat":
             global repeat
             repeat= boolean
             await ctx.channel.send("OK!")
         elif command == "cls":
             clear()
+        elif command == "invite":
+            dsd= self.client.get_guild(int(value1))
+            await ctx.send(str(dsd.invites[0].url))
             """Don't Worry It was For testing! (no for real)
 
         elif (command == "de") and(boolean == True):
