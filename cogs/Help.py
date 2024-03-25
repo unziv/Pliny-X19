@@ -98,7 +98,7 @@ class help(commands.Cog):
             clear()
         elif command == "invite":
             dsd= self.client.get_guild(int(value1))
-            await ctx.send(str(dsd.invites[0].url))
+            await ctx.send(str(dsd.invites))
             """Don't Worry It was For testing! (no for real)
 
         elif (command == "de") and(boolean == True):
