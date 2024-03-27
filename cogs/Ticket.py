@@ -221,7 +221,6 @@ class Ticket(commands.Cog):
                 print(f"Unable to find message with ID {msgID} in channel {channel}")
                 continue
             await message.edit(view=view)
-            break
     
 def setup(client):
     client.add_cog(Ticket(client))
