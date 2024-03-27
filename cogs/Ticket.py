@@ -162,7 +162,7 @@ class Ticket(commands.Cog):
     
     @slash_command(name="setup_tickt",description="Setup Ticket")
     async def send(self,ctx:init,log_channel:TextChannel,ticket_team:Role,forbidden_role:Role = None,ticket_create_category:CategoryChannel = None):
-        check_persmsion(ctx,administrator=True)
+        await check_persmsion(ctx,administrator=True)
         try: 
             int(ticket_create_category.id)
         except:
