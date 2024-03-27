@@ -175,10 +175,12 @@ class Ticket(commands.Cog):
         message = await ctx.channel.send(embed=whyyyy)
         view = CustomView()
         await message.edit(view=view)
+        if forbidden_role == None:forbidden_role_id=None
+        elif forbidden_role != None:forbidden_role_id=forbidden_role.id
         data = {"message"  :message.id,
                 "channel"  :message.channel.id,
                 "role"     :ticket_team.id,
-                "forbidden":forbidden_role.id,
+                "forbidden":forbidden_role_id,
                 "log"      :log_channel.id,
                 "create"   :ticket_create_category.id}
         Data().save(ctx.guild.id,"ticket",data)
