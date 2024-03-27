@@ -119,11 +119,9 @@ class CustomView(View):
     @ui.button(label='📩')
     async def on_button_click(self, button: ui.Button, ctx: Interaction):
         guild = ctx.guild
-        data = Data().load(ctx.guild.id,"ticket")
-        forbidden_id = data['forbidden']
-        forbidden = ctx.user.get_role(forbidden_id)
+        data = dict(Data().load(ctx.guild.id,"ticket"))
+        forbidden_id = data.get("forbidden")
         if forbidden == None:
-            
             Create = data['create']
             team_id = data['role']
             if Create != 0:
@@ -153,6 +151,7 @@ class CustomView(View):
             view = Close()
             await msg.edit(view=view)
         else:
+            forbidden = ctx.user.get_role(forbidden_id)
             await ctx.send(f"You are {forbidden.mention} so You cannot create a Ticket",ephemeral=True)
 
 
