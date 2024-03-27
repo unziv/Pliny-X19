@@ -204,6 +204,7 @@ class Ticket(commands.Cog):
         if Data().check_global("ticket","servers") ==False:return
         srvID = list(Data().load_global("ticket","servers"))
         for i in srvID:
+            print(f"Checking {i}")
             data = Data().load(i,"ticket")
             chnlID = data['channel']
             msgID = data["message"]
