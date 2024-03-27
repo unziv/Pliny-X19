@@ -8,3 +8,4 @@ backup/
 .vscode/
 test.*
 data/token
+data/
