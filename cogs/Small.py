@@ -46,13 +46,7 @@ class small_commands(commands.Cog):
         await interaction.channel.send(embed=Embed)
     @slash_command(name="ping",description="Ping Bot")
     async def ping(self,ctx:init):
-        print(await ctx.response.pong())
         await ctx.response.send_message("Pong",ephemeral=True)
-#End
-
-
-
-
-
+        
 def setup(client):
     client.add_cog(small_commands(client))

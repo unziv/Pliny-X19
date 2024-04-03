@@ -38,7 +38,7 @@ class vc(commands.Cog):
         cat = member.guild.get_channel(catid)
         strlist = data['CREATED']
         self.voices = strlist
-        if after.channel is not None and after.channel.id == channel_id:
+        if (after.channel is not None) and (after.channel.id == channel_id):
             guild = member.guild
             voice_channel = await guild.create_voice_channel(f'{member.display_name}', category=cat)
             voiceid = voice_channel.id
@@ -54,7 +54,7 @@ class vc(commands.Cog):
             overwrite.connect = False
             overwrite.view_channel = True
             await channeld.set_permissions(everyone_role, overwrite=overwrite)
-        if channel is not None and after.channel is None:
+        if (after.channel is not None) or (after.channel is None):
             # A member left a voice channel
             for i in self.voices:
                 try:

@@ -114,5 +114,4 @@ else:
         client.load_extension(extension)
 
 
-
-client.run(token)
+#client.run(token)
