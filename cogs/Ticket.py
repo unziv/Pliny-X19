@@ -1,7 +1,6 @@
 from nextcord import *
 from nextcord import CategoryChannel
 from nextcord.ext import commands
-from nextcord.ext.commands import has_permissions
 from nextcord import Interaction as init
 from nextcord.ui import button, View
 import datetime

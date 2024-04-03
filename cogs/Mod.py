@@ -10,15 +10,6 @@ import random
 import json
 
 
-
-
-
-
-
-
-
-
-
 @slash_command(name="Name",description="Des")
 async def Name(self,ctx:init):
     await ctx.send(f"Hello !")

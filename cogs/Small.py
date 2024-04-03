@@ -1,8 +1,6 @@
 from nextcord import * #type: ignore
 from nextcord.ext import commands
-from nextcord.ext.commands import has_permissions
 from Lib.sherd import *
-from nextcord.ext.commands import MissingPermissions
 from nextcord import Interaction
 
 
