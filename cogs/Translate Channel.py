@@ -13,7 +13,7 @@ class Translate(commands.Cog):
     def __init__(self, client:Client):
         self.client = client
     
-    @slash_command(name="translate_category",description="Translate Entire Category")
+    @slash_command(name="clone",description="Translate Entire Category")
     async def translate(self,ctx:init,lang:str,Category:CategoryChannel):
         await check_persmsion(ctx,administrator=True)
         guild = ctx.guild
