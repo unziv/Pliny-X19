@@ -1,0 +1,87 @@
+2024-04-05 17:39:46,348 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-04-05 17:39:46,578 - INFO - logging in using static token
+2024-04-05 17:39:47,005 - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-04-05 17:39:47,180 - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-gc7j",{"micros":78615,"calls":["id_created",{"micros":1576,"calls":[]},"session_lookup_time",{"micros":355,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-243",{"micros":74526,"calls":["start_session",{"micros":60126,"calls":["discord-api-64d87f4b5b-n2gcj",{"micros":50043,"calls":["get_user",{"micros":13161},"get_guilds",{"micros":6829},"send_scheduled_deletion_message",{"micros":22},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":63,"calls":[]},"presence_started",{"micros":1463,"calls":[]},"guilds_started",{"micros":173,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":12631,"calls":[]},"connect_finished",{"micros":12677,"calls":[]},"build_ready",{"micros":19,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 672baf9cc27b277cae26c86ae89dbd3f). Resume URL specified as wss://gateway-us-east1-d.discord.gg
+2024-04-05 17:39:47,379 - INFO - nextcord.ConnectionState: Registering command with signature ('clone', 1, None)
+2024-04-05 17:39:47,580 - ERROR - Error registering command SlashApplicationCommand clone <function Translate.translate at 0x7f8968671630>: 400 Bad Request (error code: 50035): Invalid Form Body
+In options.1.name: Command name is invalid
+2024-04-05 18:40:33,370 - INFO - Got a request to RESUME the websocket.
+2024-04-05 18:40:33,513 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-05 18:40:33,610 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-d-hwjf",{"micros":2340,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":1885,"calls":[]},"session_lookup_finished",{"micros":20,"calls":[]},"discord-sessions-prd-1-243",{"micros":29}]}].
+2024-04-05 22:05:03,675 - INFO - Websocket closed with WSCloseCode.OK, cannot reconnect.
+2024-04-05 22:05:03,675 - ERROR - Attempting a reconnect in 0.31s
+Traceback (most recent call last):
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/client.py", line 696, in connect
+    await self.ws.poll_event()
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/gateway.py", line 629, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+nextcord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-04-05 22:05:04,175 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-05 22:05:04,271 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-c-gx8q",{"micros":640,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":303,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-1-243",{"micros":31}]}].
+2024-04-05 22:27:03,309 - INFO - Websocket closed with WSCloseCode.OK, cannot reconnect.
+2024-04-05 22:27:03,309 - ERROR - Attempting a reconnect in 0.27s
+Traceback (most recent call last):
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/client.py", line 696, in connect
+    await self.ws.poll_event()
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/gateway.py", line 629, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+nextcord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-04-05 22:27:03,774 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-05 22:27:03,869 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-c-l6j9",{"micros":678,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":357,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-1-243",{"micros":47}]}].
+2024-04-05 23:51:11,268 - INFO - Got a request to RESUME the websocket.
+2024-04-05 23:51:11,450 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-05 23:51:11,547 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-b-4lf7",{"micros":797,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":407,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-243",{"micros":47}]}].
+2024-04-06 01:04:10,732 - INFO - Got a request to RESUME the websocket.
+2024-04-06 01:04:10,908 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 01:04:11,004 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-b-kzbj",{"micros":707,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":378,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-243",{"micros":26}]}].
+2024-04-06 01:29:41,496 - INFO - Websocket closed with WSCloseCode.OK, cannot reconnect.
+2024-04-06 01:29:41,496 - ERROR - Attempting a reconnect in 1.52s
+Traceback (most recent call last):
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/client.py", line 696, in connect
+    await self.ws.poll_event()
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/gateway.py", line 629, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+nextcord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-04-06 01:29:43,198 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 01:29:43,298 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-d-6l95",{"micros":3443,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":972,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-1-243",{"micros":39}]}].
+2024-04-06 01:30:48,829 - INFO - Websocket closed with WSCloseCode.OK, cannot reconnect.
+2024-04-06 01:30:48,829 - ERROR - Attempting a reconnect in 3.15s
+Traceback (most recent call last):
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/client.py", line 696, in connect
+    await self.ws.poll_event()
+  File "/home/container/.local/lib/python3.10/site-packages/nextcord/gateway.py", line 629, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+nextcord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-04-06 01:30:52,151 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 01:30:52,250 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-b-z9hg",{"micros":3755,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":378,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-243",{"micros":54}]}].
+2024-04-06 03:03:37,435 - INFO - Got a request to RESUME the websocket.
+2024-04-06 03:03:37,605 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 03:03:37,700 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-c-8zl7",{"micros":893,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":533,"calls":[]},"session_lookup_finished",{"micros":26,"calls":[]},"discord-sessions-prd-1-243",{"micros":35}]}].
+2024-04-06 06:11:16,240 - INFO - Got a request to RESUME the websocket.
+2024-04-06 06:11:16,412 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 06:11:16,510 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-d-qw58",{"micros":595,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":276,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-1-243",{"micros":51}]}].
+2024-04-06 07:11:45,166 - INFO - Got a request to RESUME the websocket.
+2024-04-06 07:11:45,345 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 07:11:45,450 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-d-wfdq",{"micros":9788,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":7553,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-1-243",{"micros":36}]}].
+2024-04-06 07:38:17,463 - INFO - Got a request to RESUME the websocket.
+2024-04-06 07:38:17,642 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 07:38:17,742 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-c-r2s0",{"micros":686,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":332,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-1-243",{"micros":26}]}].
+2024-04-06 08:42:23,378 - INFO - Got a request to RESUME the websocket.
+2024-04-06 08:42:23,566 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 08:42:23,666 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-c-nm53",{"micros":650,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":324,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-243",{"micros":22}]}].
+2024-04-06 09:50:10,817 - INFO - Got a request to RESUME the websocket.
+2024-04-06 09:50:11,007 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 09:50:11,113 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-c-f5xv",{"micros":616,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":338,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-243",{"micros":50}]}].
+2024-04-06 11:59:28,527 - INFO - Got a request to RESUME the websocket.
+2024-04-06 11:59:28,704 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 11:59:28,802 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-c-jzxx",{"micros":696,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":310,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-243",{"micros":20}]}].
+2024-04-06 15:21:55,105 - INFO - Got a request to RESUME the websocket.
+2024-04-06 15:21:55,295 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 15:21:55,391 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-d-4bjt",{"micros":714,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":335,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-1-243",{"micros":28}]}].
+2024-04-06 17:24:44,888 - INFO - Got a request to RESUME the websocket.
+2024-04-06 17:24:45,124 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-06 17:24:45,227 - INFO - Shard ID None has successfully RESUMED session 672baf9cc27b277cae26c86ae89dbd3f under trace ["gateway-prd-us-east1-c-xpln",{"micros":993,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":430,"calls":[]},"session_lookup_finished",{"micros":19,"calls":[]},"discord-sessions-prd-1-243",{"micros":28}]}].
+2024-04-06 18:09:43,605 - INFO - Cleaning up tasks.
+2024-04-06 18:09:43,605 - INFO - Cleaning up after 1 tasks.
+2024-04-06 18:09:43,611 - INFO - All tasks finished cancelling.
+2024-04-06 18:09:43,611 - INFO - Closing the event loop.
