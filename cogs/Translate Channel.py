@@ -9,12 +9,12 @@ import json
 import requests
 
 
-class Translate(commands.Cog):
+class cloning(commands.Cog):
     def __init__(self, client:Client):
         self.client = client
     
     @slash_command(name="clone",description="Translate Entire Category")
-    async def translate(self,ctx:init,lang:str,Category:CategoryChannel):
+    async def clone(self,ctx:init,lang:str,Category:CategoryChannel):
         await check_persmsion(ctx,administrator=True)
         guild = ctx.guild
         channels = Category.channels
@@ -35,4 +35,4 @@ class Translate(commands.Cog):
 
 
 def setup(client):
-    client.add_cog(Translate(client))
+    client.add_cog(cloning(client))
