@@ -1,0 +1,11 @@
+2024-04-06 18:09:53,439 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-04-06 18:09:53,742 - INFO - logging in using static token
+2024-04-06 18:09:54,176 - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-04-06 18:09:55,221 - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-lszv",{"micros":948096,"calls":["id_created",{"micros":1041,"calls":[]},"session_lookup_time",{"micros":374,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-160",{"micros":945524,"calls":["start_session",{"micros":912726,"calls":["discord-api-7d7d969f7b-ghnxn",{"micros":122112,"calls":["get_user",{"micros":77088},"get_guilds",{"micros":8443},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":134},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":61,"calls":[]},"presence_started",{"micros":10449,"calls":[]},"guilds_started",{"micros":176,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":22055,"calls":[]},"connect_finished",{"micros":22086,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: d378aa8b8f52b82952578b6bd9752aa1). Resume URL specified as wss://gateway-us-east1-b.discord.gg
+2024-04-06 18:09:55,424 - INFO - nextcord.ConnectionState: Registering command with signature ('clone', 1, None)
+2024-04-06 18:09:55,593 - ERROR - Error registering command SlashApplicationCommand clone <function Translate.translate at 0x7fc96c3095a0>: 400 Bad Request (error code: 50035): Invalid Form Body
+In options.1.name: Command name is invalid
+2024-04-06 18:44:09,728 - INFO - Cleaning up tasks.
+2024-04-06 18:44:09,728 - INFO - Cleaning up after 1 tasks.
+2024-04-06 18:44:09,733 - INFO - All tasks finished cancelling.
+2024-04-06 18:44:09,733 - INFO - Closing the event loop.
