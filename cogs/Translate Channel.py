@@ -30,6 +30,8 @@ class cloning(commands.Cog):
                 channel = await cate.create_forum_channel(channel.name)
             else:
                 await ctx.channel.send(f"{channel.name} is not supported")
+        else:
+            await ctx.send(f"{category.name} has been cloned to {cate.name}!")
             
 
 
