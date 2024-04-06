@@ -1,4 +1,3 @@
-from uuid import uuid4
 from nextcord import *
 import nextcord as discord
 from nextcord.ext import commands
@@ -13,8 +12,8 @@ class cloning(commands.Cog):
     def __init__(self, client:Client):
         self.client = client
     
-    @slash_command(name="make_twin",description="Clone Entire Category")
-    async def duplicate(self,ctx:init,Category:CategoryChannel):
+    @slash_command(name="clone",description="Clone Entire Category")
+    async def clone(self,ctx:init,Category:ChannelType.category):
         await check_persmsion(ctx,administrator=True)
         guild = ctx.guild
         channels = Category.channels
