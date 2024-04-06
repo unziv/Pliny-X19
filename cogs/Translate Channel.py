@@ -14,7 +14,7 @@ class cloning(commands.Cog):
         self.client = client
     
     @client.slash_command(name="duplicate",description="Clone Entire Category")
-    async def duplicate(self,ctx:init,lang:str,Category:CategoryChannel):
+    async def duplicate(self,ctx:init,Category:CategoryChannel):
         await check_persmsion(ctx,administrator=True)
         guild = ctx.guild
         channels = Category.channels
