@@ -13,7 +13,7 @@ class cloning(commands.Cog):
     def __init__(self, client:Client):
         self.client = client
     
-    @slash_command(name="clone",description="Translate Entire Category")
+    @client.slash_command(name="clone",description="Clone Entire Category")
     async def clone(self,ctx:init,lang:str,Category:CategoryChannel):
         await check_persmsion(ctx,administrator=True)
         guild = ctx.guild
