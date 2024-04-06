@@ -10,7 +10,7 @@ import sys
 import threading
 import time
 
-# clear()
+clear()
 current_datetime = datetime.now()
 date = str(current_datetime.strftime("%Y-%m-%d"))
 timed = str(current_datetime.strftime("%H-%M-%S-%f"))
@@ -40,7 +40,7 @@ sherd.owner_id = 829806976702873621
 @client.event
 async def on_ready():
     await client.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.watching, name=f"Over {len(client.guilds)} Servers"))
-    clear()
+    # clear()
     print('Your Bot Is Ready!\nWe have logged in as {0.user}'.format(client))
     print(line)
 
