@@ -16,8 +16,8 @@ class cloning(commands.Cog):
     async def clone(self,ctx:init,category:CategoryChannel):
         await check_persmsion(ctx,administrator=True)
         guild = ctx.guild
-        channels = Category.channels
-        cate = await Category.clone()
+        channels = category.channels
+        cate = await category.clone()
         for channel in channels:
             if channel.type == ChannelType.text:
                 channel = await cate.create_text_channel(channel.name)
