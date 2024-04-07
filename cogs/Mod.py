@@ -10,14 +10,11 @@ import random
 import json
 
 
-@slash_command(name="Name",description="Des")
-async def Name(self,ctx:init):
-    await ctx.send(f"Hello !")
-
-
 class mod(commands.Cog):
     def __init__(self, client):
         self.client = client
+
+
     #Kick
     async def kick_command(self,ctx:init,user:Member,reason:str =None):
         await check_persmsion(ctx,kick_members=True)
@@ -91,50 +88,6 @@ class mod(commands.Cog):
     async def timeout(self,ctx:commands.Context,member:Member,minutes:int,reason:str = None):
         ctx.user = ctx.author
         await self.timeout_command(ctx,member,minutes,reason)
-
-
-    # async def warn_command(self,ctx,user:Member,reason:str = None):
-    #     await check_persmsion(ctx,moderate_members=True)
-    #     await ctx.response.send_message(f"User {member} has Been Warned")
-    #     os.makedirs(f"data/servers/{ctx.guild.id}",exist_ok=True)
-    #     path = f"data/servers/{ctx.guild.id}/data_warns.json"
-    #     data = {}
-    #     try:
-    #         with open(path, encoding="utf-8") as f:
-    #             data = json.loads(f.read())
-    #     except FileNotFoundError:
-    #         data = {}
-    #     Data().update({create_random_id(data):{
-    #         "who"   : member.id,
-    #         "by"    : ctx.user.id,
-    #         "time"  : str(datetime.datetime.now()),
-    #         "reason": reason
-    #     }})
-    #     with open(path, "w", encoding="utf-8") as i:
-    #         i.write(json.dumps(data,indent=2))
-    
-    # @slash_command(name="warn",description="Warn Member")
-    # async def warn_slash(self,ctx:init,user:Member,reason:str = None):
-    #     await self.warn_command(ctx,user,reason)
-    # @commands.command(name="warn",description="Warn Member")
-    # async def warn(self,ctx:commands.Context,user:Member,reason:str = None):
-    #     ctx.user = ctx.author
-    #     await self.warn_command(ctx,user,reason)
-
-
-    # async def list_member_warns_command(self,ctx:init | commands.Context,user:Member):
-    #     await check_persmsion(ctx,moderate_members=True)
-        
-
-    # @slash_command(name="list_member_warns",description="List all Member Warns")
-    # async def list_member_warns_slash(self,ctx:init,user:Member):
-    #     await self.list_member_warns_command(ctx.user)
-    # @commands.command(name="list_member_warns",description="List all Member Warns")
-    # async def list_member_warns(self,ctx:commands.Context,user:Member):
-    #     ctx.user = ctx.author
-    #     await self.list_member_warns_command(ctx.user)
-
-            
 
     async def clear_command(self,ctx:init | commands.Context,amount:int):
         await check_persmsion(ctx,manage_messages=True)

@@ -35,46 +35,6 @@ class select(ui.View):
 class help(commands.Cog):
     def __init__(self, client:Client):
         self.client = client
-    
-    # @slash_command(name="help")
-    # async def helper(self,ctx:init):
-    #     hel ="""
-    #         - Setups
-    #         > ```/setup_tickt <LOG_CHANNEL> <TICKET_CREATE_CATEGORY>```
-    #         > This command will make a ticket channel for you (More Features Will Added!)
-    #         > ```/setup_bettervc <CATEGORY>```
-    #         > This will make a Temp Voice Chats Works Only With Invite! (More Features Will Added!)
-    #         > ```/setup_bettergroups <CATEGORY>```
-    #         > This Will make anyone can make Groups INSIDE your server! (and he can change the permissions in his group / Channel)
-    #         > ```/setup_logs <TEXT_LOG_CHANNEL> <VOICE_LOG_CHANNEL> <SERVER_LOG_CHANNEL> <MEMBERS_LOG_CHANNEL> <ROLES_LOG_CHANNEL> <INVITE_LOG_CHANNEL>```
-    #         > This will send you anything happend in your server from changes and deleted message or edited message!
-    #         I am too lazy to continue (=
-    #     """
-    #     await ctx.send(hel,ephemeral=True)
-    @client.slash_command(name="help", description="List All Commands")
-    async def help(self,ctx:init):
-        await ctx.response.defer(ephemeral=True)
-        slas = self.client.get_application_command(2342342234)
-        commands = self.client.get_application_commands()
-        #slas.parent_cog
-        #{
-        #    "Cog":[
-        #        [
-        #            "name",
-        #            "dec"
-        #        ],
-        #    ]
-        #}
-        for command in commands:
-            for i in cogs:
-                if i in str(command.parent_cog):
-                    cogs[i].append([command.name,command.description,[option for option in command.options]])
-                    break
-        await ctx.channel.send(f"```js\n{cogs}```")
-        veiw = select()
-        await ctx.send("Hi",view=veiw)
-        
-
     @slash_command(name="console")
     async def console(self,ctx:init,command:str,boolean:bool = False,value1=None | str | int | bool,value2=None | str | int):
         await check_owner_persmsion(ctx)

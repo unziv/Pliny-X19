@@ -1,9 +1,6 @@
 from nextcord import *
 from nextcord.ext import commands
-from nextcord.ext.commands import has_permissions
-from nextcord.ext.commands import MissingPermissions
 from nextcord import Interaction as init
-from nextcord import ui
 from Lib.sherd import *
 
 class vc(commands.Cog):
@@ -42,7 +39,11 @@ class vc(commands.Cog):
             guild = member.guild
             voice_channel = await guild.create_voice_channel(f'{member.display_name}', category=cat)
             voiceid = voice_channel.id
-            self.voices.append(voiceid)
+            self.voices.append({
+                 "id":voiceid,
+                 "name":f"{member.display_name}",
+                 "user_limit":voice_channel.user_limit,
+            })
             Data().save(member.guild.id,"BetterVC",data)
             channeld = member.guild.get_channel(voiceid)
             await member.move_to(channeld)
@@ -56,16 +57,10 @@ class vc(commands.Cog):
             await channeld.set_permissions(everyone_role, overwrite=overwrite)
         if (after.channel is not None) or (after.channel is None):
             # A member left a voice channel
-            for i in self.voices:
-                try:
-                    int(i)
-                except ValueError:
-                    continue
-                if int(i) == int(before.channel.id):
-                    if before.channel.members == []:
-                        await before.channel.delete()
-                        self.voices.remove(i)
-                        Data().save(member.guild.id,"BetterVC",data)
+            if int(before.channel.id) in self.voices:
+                await before.channel.delete()
+                self.voices.remove(int(before.channel.id))
+                Data().save(member.guild.id,"BetterVC",data)
     @user_command(name="Party: Invite")                
     async def inviteee(self,ctx:init,user:Member):
         member = ctx.guild.get_member(ctx.user.id)

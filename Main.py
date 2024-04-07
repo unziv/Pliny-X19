@@ -6,7 +6,6 @@ import Lib.sherd as sherd
 from nextcord import Interaction as init
 import logging
 from datetime import datetime
-import sys
 import threading
 import time
 

@@ -36,14 +36,14 @@ class small_commands(commands.Cog):
 
     @slash_command(description="Create Embeds")
     async def create(self,interaction,title:str,des=str):
-        Embed = Embed(
+        embed = Embed(
             title=title,
             description=des,color=0x31F9FF
         )
-        Embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar.url)
-        Embed.add_field(name=f"",value=f"From <@{interaction.user.id}>")
+        embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar.url)
+        embed.add_field(name=f"",value=f"From <@{interaction.user.id}>")
         await interaction.response.send_message("Sended",ephemeral=True)
-        await interaction.channel.send(embed=Embed)
+        await interaction.channel.send(embed=embed)
     @slash_command(name="ping",description="Ping Bot")
     async def ping(self,ctx:init):
         await ctx.response.send_message("Pong",ephemeral=True)
