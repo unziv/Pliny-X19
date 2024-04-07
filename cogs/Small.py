@@ -1,7 +1,7 @@
 from nextcord import * #type: ignore
 from nextcord.ext import commands
 from Lib.sherd import *
-from nextcord import Interaction
+from nextcord import Interaction as init
 
 
 
@@ -35,13 +35,12 @@ class small_commands(commands.Cog):
         await user.send(embed=embed)
 
     @slash_command(description="Create Embeds")
-    async def create(self,interaction,title:str,des=str):
+    async def create(self,interaction:init,title:str,des=str):
         embed = Embed(
             title=title,
             description=des,color=0x31F9FF
         )
-        embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar.url)
-        embed.add_field(name=f"",value=f"From <@{interaction.user.id}>")
+        embed.set_author(name=interaction.user.mention, icon_url=interaction.user.avatar.url)
         await interaction.response.send_message("Sended",ephemeral=True)
         await interaction.channel.send(embed=embed)
     @slash_command(name="ping",description="Ping Bot")
