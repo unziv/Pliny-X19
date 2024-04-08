@@ -13,11 +13,12 @@ class cloning(commands.Cog):
         self.client = client
     
     @slash_command(name="clone",description="Clone Entire Category")
-    async def clone(self,ctx:init,category:CategoryChannel):
+    async def clone(self,ctx:init,category:CategoryChannel, replace_name:str = None):
         await check_persmsion(ctx,administrator=True)
         guild = ctx.guild
+        if replace_name == None:replace_name = category.name
         channels = category.channels
-        cate = await category.clone()
+        cate = await category.clone(name=replace_name)
         for channel in channels:
             if channel.type == ChannelType.text:
                 channel = await cate.create_text_channel(channel.name)
