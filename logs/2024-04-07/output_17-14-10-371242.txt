@@ -1,0 +1,20 @@
+2024-04-07 17:14:10,372 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-04-07 17:14:10,471 - INFO - logging in using static token
+2024-04-07 17:14:10,934 - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-04-07 17:14:11,099 - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-0djx",{"micros":52124,"calls":["id_created",{"micros":1056,"calls":[]},"session_lookup_time",{"micros":440,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-267",{"micros":49284,"calls":["start_session",{"micros":39425,"calls":["discord-api-7d7d969f7b-26p84",{"micros":34988,"calls":["get_user",{"micros":6134},"get_guilds",{"micros":3615},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":74,"calls":[]},"presence_started",{"micros":197,"calls":[]},"guilds_started",{"micros":162,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":9346,"calls":[]},"connect_finished",{"micros":9354,"calls":[]},"build_ready",{"micros":63,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 1ae62981a9d25198befcf07142bf1008). Resume URL specified as wss://gateway-us-east1-d.discord.gg
+2024-04-07 18:55:51,764 - INFO - Got a request to RESUME the websocket.
+2024-04-07 18:55:51,912 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-07 18:55:52,023 - INFO - Shard ID None has successfully RESUMED session 1ae62981a9d25198befcf07142bf1008 under trace ["gateway-prd-us-east1-d-mv3s",{"micros":6041,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2532,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-267",{"micros":42}]}].
+2024-04-07 21:04:56,892 - INFO - Got a request to RESUME the websocket.
+2024-04-07 21:04:57,088 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-07 21:04:57,200 - INFO - Shard ID None has successfully RESUMED session 1ae62981a9d25198befcf07142bf1008 under trace ["gateway-prd-us-east1-c-35gj",{"micros":8698,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":4366,"calls":[]},"session_lookup_finished",{"micros":19,"calls":[]},"discord-sessions-prd-1-267",{"micros":56}]}].
+2024-04-07 21:56:24,210 - INFO - Got a request to RESUME the websocket.
+2024-04-07 21:56:24,397 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-07 21:56:24,494 - INFO - Shard ID None has successfully RESUMED session 1ae62981a9d25198befcf07142bf1008 under trace ["gateway-prd-us-east1-d-wfdq",{"micros":2016,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":350,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-267",{"micros":39}]}].
+2024-04-08 00:06:09,706 - INFO - Got a request to RESUME the websocket.
+2024-04-08 00:06:09,900 - INFO - Shard ID None has sent the RESUME payload.
+2024-04-08 00:06:10,003 - INFO - Shard ID None has successfully RESUMED session 1ae62981a9d25198befcf07142bf1008 under trace ["gateway-prd-us-east1-d-17vd",{"micros":4740,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":284,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-1-267",{"micros":30}]}].
+2024-04-08 00:29:08,506 - INFO - Cleaning up tasks.
+2024-04-08 00:29:08,506 - INFO - Cleaning up after 1 tasks.
+2024-04-08 00:29:08,509 - INFO - All tasks finished cancelling.
+2024-04-08 00:29:08,510 - INFO - Closing the event loop.
