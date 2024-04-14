@@ -82,7 +82,7 @@ async def list_cogs(ctx:init):
     await ctx.response.defer(ephemeral=True)
     await sherd.check_owner_persmsion(ctx)
     temp = 0
-    a = "```"
+    a = "```\n"
     for i in list(client.extensions):
         a += str(i + "\n")
         temp += 1
